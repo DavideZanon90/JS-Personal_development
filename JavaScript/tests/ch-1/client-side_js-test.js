@@ -18,5 +18,14 @@ test.describe('Main window', function() {
 
     it('should ask to the user if he/she is ready to proceed', function() {
 
+        driver.sleep(3000);
+        driver.findElement(webdriver.By.xpath('//input[@value = "confirm"]')).accept()
+            .then(function() {
+                driver.get('http://www.google.com').then(function(url) {
+                    expect(url).toBe(true);
+                })
+            });
+            
+        // driver.findElement(webdriver.By.xpath('//input[@value = "confirm"]')).dismiss();
     });
 });
