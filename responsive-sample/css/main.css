@@ -1,9 +1,63 @@
+/* Reset
+------------------------------------------------------------ */
+* {
+	margin : 0; 
+	padding: 0; 
+}
+
 body {
-	margin: 0 auto;
+	color: #666666; 
+	font-family: Arial, helvetica, sans-serif;
+	font-size: 13px;
+}
+
+ol, ul {
+	list-style: none; 
+	margin    : 0;
+}
+
+ul li {
+	margin : 0; 
+	padding: 0;
+}
+
+h1 {
+	color        : #111111;
+	margin-bottom: 10px; 
+}	
+
+a, img {
+	 border        : none; 
+	 color         : #000; 
+	 font-weight   : bold; 
+	 outline       : none; 
+	 text-transform: uppercase;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.4em;
+	margin: 0 0 10px; 
+}
+
+img {
+	display      : block; 
+	margin-bottom: 10px;
+}
+
+aside {
+	font-style: italic; 
+	font-size : 0.9em;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display: block;
 }
 
 
 /* Logo H1 */
+
 header h1 {	
 	display    : block;
 	float      : left;
@@ -60,6 +114,10 @@ header nav li {
     margin-right: 5%;
     width: 60%;
     
+}
+
+aside {
+	margin-top: 70px;
 }
 
 
