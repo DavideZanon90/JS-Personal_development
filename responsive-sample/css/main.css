@@ -44,3 +44,49 @@ header nav li {
 #banner img {
 	width: 100%;
 }
+
+
+/* Structure */
+
+#wrapper {
+    max-width: 920px;
+    margin   : auto;
+    padding  : 2%;
+    width    : 96%;
+}
+
+#main {
+	float: left;
+    margin-right: 5%;
+    width: 60%;
+    
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+    
+    #skipTo {
+    	display: block;
+    }
+
+    header nav, #main, aside {
+    	clear : left;
+    	float : left;
+    	margin: 0 0 10px;
+    	width : 100%;
+    }
+    
+    header nav li {
+	    background: #efefef;
+	    display: block;
+	    margin: 0;
+	    margin-bottom: 3px;
+    }
+
+    header nav a {
+	    display: block;
+	    padding: 10px;
+	    text-align: center;
+    }
+}
