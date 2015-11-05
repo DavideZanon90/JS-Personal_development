@@ -1,0 +1,46 @@
+body {
+	margin: 0 auto;
+}
+
+
+/* Logo H1 */
+header h1 {	
+	display    : block;
+	float      : left;
+	height     : 70px;
+	width      : 160px;
+}
+
+
+/* Nav */
+
+header nav {
+	float     : right;
+	margin-top: 40px;
+}
+
+header nav li {
+	display    : inline;
+	margin-left: 15px;
+}
+
+#skipTo {
+	display: none;
+}
+
+#skipTo li {
+	background: #b1fffc; 
+}
+
+
+/* Banner */
+
+#banner {
+	float        : left;
+	margin-bottom: 15px;
+	width        : 100%;
+}
+
+#banner img {
+	width: 100%;
+}
