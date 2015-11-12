@@ -14,16 +14,3 @@ Modernizr.addTest('night', function() {
 	current = current.getHours();
 	console.log(!!(current >= 19));
 });
-
-// Extension to use different image formats according to the use
-var path = document.getElementById('star-svg').getAttribute('data-path');
-var	svgObj;
-
-if (Modernizr.svg) {
-	svgObj.innerHtml = '<object type="img/svg+xml" style="float:right" data="' 
-								+ path + '.png" ></obect>'
-} else {
-	svgObj.innerHtml = '<img src="' + path + '.png" />';
-}
-
-document.getElementById('star-svg').innerHtml = svgObj;
