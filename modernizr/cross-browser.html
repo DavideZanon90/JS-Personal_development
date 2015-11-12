@@ -4,10 +4,17 @@
 		<meta charset="utf-8">
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 		<style type="text/css">
-			
+			.yes { color: green; }
+			.no { color: red; }
+			.svg-wrapper span { display: none; }
+			.svg .yes { display: inline; }
+			.no-svg	.no { display: inline; }
 		</style>
 	</head>
 	<body>
-
+		<div class="svg-wrapper">
+			<span class="yes">Huzzah! You have SVG support</span>
+			<span class="no">BOO! You do not have SVG support</span>
+		</div>
 	</body>
 </html>
