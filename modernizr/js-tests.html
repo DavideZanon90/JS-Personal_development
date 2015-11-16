@@ -10,21 +10,7 @@
 	</head>
 	<body>
 		<div id="star-svg" data-path="img/star"></div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
-		<script type="text/javascript">
-			// Extension to use different image formats according to the use
-			var path = $('#star-svg').attr('data-path');
-			var	svgObj;
-
-			if (Modernizr.svg) {
-				svgObj = '<object type="img/svg+xml" style="float:right" data="' 
-						 + path + '.png"></obect>'
-			} else {
-				svgObj = '<img src="' + path + '.png" />';
-			}
-
-			$('star-svg').html(svgObj);
-		</script>
 	</body>
 </html>
