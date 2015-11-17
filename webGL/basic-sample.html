@@ -22,6 +22,27 @@
 				}
 				return gl;
 			}
+
+			function initViewport(gl, canvas) {
+				gl.viewport(0, 0, canvas.width, canvas.height);
+			}
+
+			// Create the vertex data for a square to be drawn
+			function createSquare(gl) {
+				var vertexBuffer;
+				vertexBuffer = gl.createBuffer();
+				gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
+				var verts = [
+					.5,		.5, 	0.0,
+					-.5,	.5, 	0.0,
+					.5,		-.5, 	0.0,
+					-.5,	-.5, 	0.0
+				];
+				gl.bufferData(gl.ARRAY_BUFFER, new float32Array(verts), gl.STATIC_DRAW);
+				var square = { buffer: vertexBuffer, vertSize: 3, nVerts: 4,
+							   primtype: gl.TRIANGLE_STRIP };
+				return square;
+			}
 		</script>
 	</body>
 </html>
